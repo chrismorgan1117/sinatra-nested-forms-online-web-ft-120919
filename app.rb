@@ -2,8 +2,7 @@ require './environment'
 
 module FormsLab
   class App < Sinatra::Base
-
-    get '/' do 
+    get '/' do
       erb :root
     end
 
@@ -21,5 +20,6 @@ module FormsLab
 
       erb :'pirates/show'
     end
+    
   end
 end
