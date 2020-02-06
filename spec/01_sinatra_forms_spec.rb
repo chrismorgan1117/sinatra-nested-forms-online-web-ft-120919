@@ -45,7 +45,7 @@ describe "FormsLab::App" do
       expect(last_response.body).to include("pirate[ships][][booty]")
     end
   end
-  <<-DOC
+
   describe "POST '/pirates'" do
     before do
       post '/pirates', {
@@ -95,5 +95,4 @@ describe "FormsLab::App" do
       expect(last_response.body).to include("Inner Tubes")
     end
   end
-  DOC
 end
